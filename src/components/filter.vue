@@ -199,9 +199,6 @@ export default {
         }
       }
     },
-    // handlerClick(index) {
-    //   this.page = index - 1;
-    // },
     listChecked(value, category) {
       this.sortedProducts = [...this.catalog];
 
