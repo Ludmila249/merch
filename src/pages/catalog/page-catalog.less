@@ -1,0 +1,47 @@
+@import '@/assets/styles/helpers';
+
+.page-catalog {
+  position: relative;
+  width: 100%;
+  background-color: #FFF;
+  border-radius: 32px;
+  padding: 40px;
+
+  @media @tablet {
+    padding: 40px 20px;
+  }
+
+  &__wrap-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @media @tablet {
+      display: block;
+    }
+  }
+
+  &__wrap-select {
+    display: flex;
+    align-items: center;
+  }
+
+  &__select {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  &__select-sort {
+    position: absolute;
+    top: 40px;
+    right: 175px;
+  }
+
+  &__catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,27 @@
+@import './fonts';
+@import './reset';
+@import './helpers';
+@import './css-vars';
+
+html,
+body {
+  font-family: @font;
+  font-size: 16px;
+  font-weight: 400;
+
+  background-color: #F2F2F2;
+
+  @media @tablet {
+    overflow-x: hidden;
+
+    &.scroll-lock {
+      overflow: hidden;
+    }
+  }
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
