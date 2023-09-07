@@ -258,50 +258,6 @@ export default {
       }
 
       this.pageNumberActive = 1;
-
-      // const itemIndex = this.arrayChecked.indexOf(value);
-
-      // if (this.sortedProducts.length === this.catalog.length) {
-      //   this.sortedProducts = [];
-      // }
-
-      // if (itemIndex !== -1) {
-      //   this.arrayChecked.splice(itemIndex, 1);
-      //   this.sortedProducts = this.sortedProducts.filter(
-      //     (elem) => elem[category] !== value
-      //   );
-      // } else {
-      //   this.arrayChecked.push(value);
-
-      //   if (this.arrayChecked.length >= 2) {
-      //     this.arrayChecked.forEach((elem) => {
-      //       this.sortedProducts = this.sortedProducts.filter((item) => {
-      //         if (item[category] === elem && Boolean(typeof item[category] === 'string')) {
-      //           return item;
-      //         }
-      //         if (item[category.toLowerCase()].includes(elem)) {
-      //           return item;
-      //         }
-      //         return null;
-      //       });
-      //     });
-      //   } else {
-      //     const data = this.catalog.filter((elem) => {
-      //       if (elem[category] === value && Boolean(typeof elem[category] === 'string')) {
-      //         return elem;
-      //       }
-      //       if (elem[category.toLowerCase()].includes(value)) {
-      //         return elem;
-      //       }
-      //       return null;
-      //     });
-      //     this.sortedProducts.push(...data);
-      //   }
-      // }
-
-      // if (this.arrayChecked.length === 0) {
-      //   this.sortedProducts = [...this.catalog];
-      // }
     },
     filterReset() {
       this.sortedProducts = [...this.catalog];
